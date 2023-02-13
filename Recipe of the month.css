@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#navbar {
+  background-color: #2d2738;
+  height: 50px;
+}
+#navbar a {
+  text-decoration: none;
+  color: rgba(230, 214, 214, 0.904);
+  padding: 16px;
+  width: auto;
+  display: inline-block;
+}
+#navbar a:hover {
+  background-color: rgb(185, 71, 71);
+}
+
+.container {
+  background-image: url(https://cdn.pixabay.com/photo/2016/03/05/19/36/appetite-1238456_960_720.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.container h1 {
+  font-size: 50px;
+  color: rgb(34, 15, 31);
+  display: fixed;
+  padding: 84px;
+}
+.container p {
+  text-align: center;
+  color: rgb(34, 15, 31);
+  border: 1px solid transparent;
+  width: 30%;
+}/*# sourceMappingURL=Recipe of the month.css.map */

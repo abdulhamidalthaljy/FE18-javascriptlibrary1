@@ -1,0 +1,42 @@
+$color_1: rgba(230, 214, 214, 0.904);
+$color_2: rgb(34, 15, 31);
+$background-color_1: #2d2738;
+$background-color_2: rgb(185, 71, 71);
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+#navbar {
+	background-color: $background-color_1;
+	height: 50px;
+	a {
+		text-decoration: none;
+		color: $color_1;
+		padding: 16px;
+		width: auto;
+		display: inline-block;
+		&:hover {
+			background-color: $background-color_2;
+		}
+	}
+}
+.container {
+	background-image: url(https://cdn.pixabay.com/photo/2016/03/05/19/36/appetite-1238456_960_720.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	h1 {
+		font-size: 50px;
+		color: $color_2;
+		display: fixed;
+		padding: 84px;
+	}
+	p {
+		text-align: center;
+		color: $color_2;
+		border: 1px solid transparent;
+		width: 30%;
+	}
+
+}

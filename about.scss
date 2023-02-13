@@ -1,0 +1,117 @@
+$color_1: rgba(230, 214, 214, 0.904);
+$color_2: rgb(34, 15, 31);
+$background-color_1: #2d2738;
+$background-color_2: rgb(185, 71, 71);
+
+nav {
+    background-color: $background-color_1;
+    overflow: hidden;
+
+    a {
+        float: left;
+        display: block;
+        color: $color_1;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        &:hover {
+            color: $color_2;
+            font-size: 20px;
+            background-color: $background-color_2;
+            transform: rotate(360deg);
+            transition: all 1s ease-in-out;
+        }
+    }
+}
+
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    height: 100vh;
+    width: 100%;
+    margin: 10px;
+}
+
+#con1 {
+    grid-column: 1/3;
+    background-image: url(https://cdn.pixabay.com/photo/2016/09/06/14/24/hummus-1649231_960_720.jpg);
+    background-size: cover;
+}
+
+.div1 {
+    &:hover {
+
+        transition: all 1s ease-in-out;
+        border-radius: 60px;
+    }
+}
+
+#con2 {
+    grid-column: 3/5;
+    grid-row: 1/3;
+    background-image: url(https://cdn.pixabay.com/photo/2015/11/23/09/21/hummus-1058000_960_720.jpg);
+    background-size: cover;
+}
+
+#con3 {
+    background-image: url(https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_960_720.jpg);
+    background-size: cover;
+}
+
+#con4 {
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971552_960_720.jpg);
+    background-size: cover;
+}
+
+#con5 {
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/23/19/57/asparagus-2169305_960_720.jpg);
+    background-size: cover;
+}
+
+#con6 {
+    background-image: url(https://cdn.pixabay.com/photo/2014/10/19/20/59/hamburger-494706_960_720.jpg);
+    background-size: cover;
+}
+
+.con6 {
+    grid-column: span 2;
+}
+
+footer {
+    background-color: $background-color_1;
+    padding: 1em;
+
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+        li {
+            a {
+                display: block;
+                padding: 20px;
+                text-decoration: none;
+                color: $color_1;
+
+                &:hover {
+                    background-color: $background-color_2;
+                }
+            }
+        }
+    }
+
+    p {
+        padding-left: 100px;
+        font-size: 0.8em;
+        margin: 1em 0;
+        font-size: 1rem;
+        color: $color_1;
+
+    }
+}
